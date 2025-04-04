@@ -921,7 +921,7 @@ def fetch_data_from_existing_notion_pages_data_database_table(DATABASE_ID=""):
             })
 
         # Print extracted rows
-        # print(json.dumps(all_pages, indent=4))
+        print(all_pages)
 
     else:
         # print(f"Error: {response.status_code}, {response.text}")
@@ -2006,3 +2006,4 @@ add_page_to_action_items_database_table_by_id("196e35223beb81228d00c817b034f906"
 #     "latest_data" : ["updated-point1" , "updated-point2" , "updated-point3"]
 # }
 # update_latest_project_details_row_data(updated_latest_project_details_data)
+fetch_data_from_existing_notion_pages_data_database_table()
